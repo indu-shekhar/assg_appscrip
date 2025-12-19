@@ -11,6 +11,7 @@ Although, I have given steps to start the application, I have also given the mht
 **Table of Contents:**
 - [INTRODUCTION:](#introduction)
 - [Simple Implementation](#simple-implementation)
+  - [Application Flow Diagram](#application-flow-diagram)
   - [To Run the Application Locally:](#to-run-the-application-locally)
     - [Backend Framework](#backend-framework)
     - [Session Management](#session-management)
@@ -33,6 +34,22 @@ Implementation MOCK can be viewed as [Swagger MOCK](Artifacts/Trade%20Opportunit
 # Simple Implementation
 ---
 This document provides a detailed breakdown of the components and libraries used in the Simple Implementation of the FastAPI application for market analysis reports.
+
+## Application Flow Diagram
+
+```mermaid
+flowchart TD
+  A[Client Request] --> B[POST /token - Login]
+  B -->|JWT Token| C[Client stores token]
+  C --> D("GET /analyze/{sector}")
+  D --> E[Auth: Validate JWT]
+  E --> F[Rate Limiter]
+  F --> G[search_market_data - DuckDuckGo]
+  G --> H[analyze_with_gemini - Gemini API]
+  H --> I[Return Markdown Report]
+  C --> J[GET /health]
+  J --> K[Return Health Status]
+  ```
 
 ## To Run the Application Locally:
 Prerequisites
