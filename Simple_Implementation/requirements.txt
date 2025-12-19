@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-jose[cryptography]
+passlib
+google-generativeai
+duckduckgo-search
+python-multipart
+python-dotenv
