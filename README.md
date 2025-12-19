@@ -1,5 +1,6 @@
 **Table of Contents:**
 - [Simple Implementation](#simple-implementation)
+  - [To Run the Application Locally:](#to-run-the-application-locally)
     - [Backend Framework](#backend-framework)
     - [Session Management](#session-management)
     - [Rate Limiting](#rate-limiting)
@@ -21,6 +22,48 @@ Implementation MOCK can be viewed as [Swagger MOCK](Artifacts/Trade%20Opportunit
 # Simple Implementation
 ---
 This document provides a detailed breakdown of the components and libraries used in the Simple Implementation of the FastAPI application for market analysis reports.
+
+## To Run the Application Locally:
+Prerequisites
+- Python 3.10+ recommended
+- git (optional)
+
+Setup
+1. Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Copy the example env and set your keys:
+
+```bash
+cp .env.example .env
+# Edit .env and set GEMINI_API_KEY and SECRET_KEY
+```
+
+Run the app
+
+From inside the `Simple_Implementation` folder (where `main.py` lives):
+
+```bash
+# Option A: run with the start script
+./start.sh
+
+# Option B: run uvicorn directly
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Notes
+- The app expects `GEMINI_API_KEY` in the environment to use the Gemini model.
+- For testing, use username `developer` and password `secret` (hardcoded demo user).
 
 
 ### Backend Framework
