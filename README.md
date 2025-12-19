@@ -1,4 +1,15 @@
+# INTRODUCTION:
+Hi Team,
+I have implemented this Simple Implementation of the FastAPI application for market analysis reports as per the requirements specified, Hope you find it satisfactory.
+I have tried to follow through on all of the requirements and necessary features, IF something is missing you can let me know.
+
+Although, I have given steps to start the application, I have also given the mhtml file to quickly view the ouput of the application: [mock site](Artifacts/Trade%20Opportunities%20API%20-%20Swagger%20UI.mhtml)
+
+![Analyze Sector 2](Artifacts/Analyze_Sector_2.png)
+
+---
 **Table of Contents:**
+- [INTRODUCTION:](#introduction)
 - [Simple Implementation](#simple-implementation)
   - [To Run the Application Locally:](#to-run-the-application-locally)
     - [Backend Framework](#backend-framework)
