@@ -1,9 +1,9 @@
 # INTRODUCTION:
 Hi Team,
-I have implemented this Simple Implementation of the FastAPI application for market analysis reports as per the requirements specified, Hope you find it satisfactory.
-I have tried to follow through on all of the requirements and necessary features, IF something is missing you can let me know.
+I have implemented a simple FastAPI application for market analysis reports as per the specified requirements. I hope it's good for you.
+I have tried to follow all of the requirements and necessary features. If anything is missing, you can let me know.
 
-Although, I have given steps to start the application, I have also given the mhtml file to quickly view the ouput of the application: [mock site](Artifacts/Trade%20Opportunities%20API%20-%20Swagger%20UI.mhtml)
+Although I have given steps to start the application, I have also given the mhtml file to quickly view the output of the application (download and open it in browser): [mock site](Artifacts/Trade%20Opportunities%20API%20-%20Swagger%20UI.mhtml)
 
 ![Analyze Sector 2](Artifacts/Analyze_Sector_2.png)
 
